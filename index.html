@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>About maruthi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <h1>
+                        MARUTHI KUMAR DWARAPUREDDY
+                    </h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                      
+                       <li><a href="#"><h1>MARUTHI KUMAR DWARAPUREDDY</h1></a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="images/my.jpg.jpg" class="pic">
+                <div id="circle">
+                    <div class="feature one">
+                        <div>
+                            <h1>About</h1>
+                            <p style = "width: 300px !important;">I am a final year student in the college of aditya degree college studying for bachelors in computer science.I am intersted in coding.Apart from it i am good at sports</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <div>
+                            <h1>Skills</h1>
+                            <p>Porgramming:PYTHON,C,JAVA</P>
+                            <p>Web development:HTML,CSS,JS</P>
+                            <p>SPORTS:Right hand batsman,Right arm medium fast bowler</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <div>
+                            <h1>Personal profile</h1>
+                            <p>DOB:29/05/2001</p>
+                            <p>Known Languages:Telugu,English</p>
+                            <p>Hobby:Reading books,tavelling,playing cricket</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <div>
+                            <h1>Contact</h1>
+                            <p>ph:6301992745</p>
+                            <p>mail:maruthikumar.d.m.k@gmail.com</p>
+                            <p>Fb/insta/twitter:maruthi kumar dwarapureddy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="images/arrow.png" id="upBtn">
+                <h3>next</h3>
+                <img src="images/arrow.png" id="downBtn">
+
+            </div>
+
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+
+            var rotatevalue = circle.style.transform;
+            var rotatesum;
+
+
+         upBtn.onclick = function()
+         {
+             rotatesum = rotatevalue + "rotate(-90deg)";
+             circle.style.transform = rotatesum;
+             rotatevalue = rotatesum;
+         }
+         downBtn.onclick = function()
+         {
+             rotatesum = rotatevalue + "rotate(90deg)";
+             circle.style.transform = rotatesum;
+             rotatevalue = rotatesum;
+         }
+        </script>
+    </body>
+</html>
